@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fw8-GI-VTN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fw8-GI-VTN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +13,10 @@
         <scene sceneID="bxb-SV-GCM">
             <objects>
                 <viewController id="EvO-4w-0id" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FWx-Vq-6jP"/>
+                        <viewControllerLayoutGuide type="bottom" id="je5-zA-YIf"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uHt-zH-HDv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +33,6 @@
                             <constraint firstItem="vzK-F0-aBX" firstAttribute="centerY" secondItem="uHt-zH-HDv" secondAttribute="centerY" id="9QH-BG-Mp0"/>
                             <constraint firstItem="vzK-F0-aBX" firstAttribute="centerX" secondItem="uHt-zH-HDv" secondAttribute="centerX" id="G6F-B6-zPA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="OWQ-Fn-669"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="热门" id="BQz-3y-Pz4"/>
                 </viewController>
@@ -87,6 +89,10 @@
         <scene sceneID="8jK-6k-i7Y">
             <objects>
                 <viewController id="tV0-E5-oQI" customClass="MeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mIH-5G-OS7"/>
+                        <viewControllerLayoutGuide type="bottom" id="6tn-RS-muv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BiU-if-yjg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +111,6 @@
                             <constraint firstItem="rcz-Ji-1Kl" firstAttribute="centerY" secondItem="BiU-if-yjg" secondAttribute="centerY" id="0aN-PO-q1W"/>
                             <constraint firstItem="rcz-Ji-1Kl" firstAttribute="centerX" secondItem="BiU-if-yjg" secondAttribute="centerX" id="VkL-Z3-wYl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tSA-yM-FgJ"/>
                     </view>
                     <connections>
                         <outlet property="themeBtn" destination="rcz-Ji-1Kl" id="UzX-rA-g91"/>
@@ -136,11 +141,14 @@
         <scene sceneID="bLt-nX-A3H">
             <objects>
                 <viewController id="n8D-U3-Orf" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uwa-ym-qaj"/>
+                        <viewControllerLayoutGuide type="bottom" id="zL0-0q-dVm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MPo-j0-Pjc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.61568627450000002" green="0.67843137249999996" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="esY-1Q-B3e"/>
                     </view>
                     <navigationItem key="navigationItem" title="我的" id="uwz-Tb-rnV"/>
                 </viewController>
